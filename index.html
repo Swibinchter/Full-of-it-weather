@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<title>Full of it 天气</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+	<div class = "searchBar">
+	   <img class = "logo" src='http://p1.bpimg.com/1949/3961f0efd715773c.png'>
+	   <span class = "designer">Design by 毕小月</span>
+	   <input id = "city" value = "" placeholder="请输入城市名称"><button id = "btn_city">查询</button>
+	</div>
+
+	<div class = "wrapper">
+
+
+	    <div class = "info">
+	      <span class = "realtime_city_name"></span>
+	      <span class = "today_date"></span>
+	      <span class = "today_week"></span>
+	      <span class = "today_nongli"></span>
+	      <p id = "json"></p>
+	    </div>
+	  
+	    <div class = "today">   
+	      <div class = "today_weather">
+	        <h2 class = "today_title">今日天气</h2>
+	        <p class = "today_weather_info"></p>
+	        <p class = "pm25_quality_p"></p>
+	        <p class = "pm25_pm25_p"></p>
+	        <p class = "pm25_des"></p>    
+	      </div>
+	 
+	      <div class = "realtime_weather">
+	        <h2 class = "realtime_title">实时天气</h2>
+	        <p class = "big_lineheight realtime_weather_info"></p>
+	        <p class = "big_lineheight realtime_wind_info"></p>
+	        <p class = "big_lineheight realtime_weather_humidity"></p>
+	        <p class = "big_lineheight realtime_time"></p>
+	      </div>
+	      
+	      <div class = "index">
+	        <div class = "chuanyi">
+	          <h3 class = "index_title">穿衣指数</h3>
+	          <p class = "index_con chuanyi_con"></p>
+	          <p class = "index_des chuanyi_des"></p>
+	        </div>
+	        <div class = "ganmao">
+	          <h3 class = "index_title">感冒指数</h3>
+	          <p class = "index_con ganmao_con"></p>
+	          <p class = "index_des ganmao_des"></p>
+	        </div>
+	        <div class = "kongtiao">
+	          <h3 class = "index_title">空调指数</h3>
+	          <p class = "index_con kongtiao_con"></p>
+	          <p class = "index_des kongtiao_des"></p>
+	        </div>
+	        <div class = "xiche">
+	          <h3 class = "index_title">洗车指数</h3>
+	          <p class = "index_con xiche_con"></p>
+	          <p class = "index_des xiche_des"></p>
+	        </div>
+	        <div class = "yundong">
+	          <h3 class = "index_title">运动指数</h3>
+	          <p class = "index_con yundong_con"></p>
+	          <p class = "index_des yundong_des"></p>
+	        </div>
+	        <div class = "ziwaixian">
+	          <h3 class = "index_title">紫外线指数</h3>
+	          <p class = "index_con ziwaixian_con"></p>
+	          <p class = "index_des ziwaixian_des"></p>
+	        </div>
+	        <div class = "for_border"></div>
+	      </div>
+	    </div>
+	  <div class = "future">
+	    <h2 class = "future_title">未来4天天气</h2>
+	    <div class = "future1">
+	      <p class = "future_day"><span class = "future future_date"></span> <span class = "future future_week"></span></p>
+	      <p class = "future_nongli"></p>
+	      <p class = "future_weather"></p>
+	    </div>
+	    <div class = "future2">
+	      <p class = "future_day"><span class = "future future_date"></span> <span class = "future future_week"></span></p>
+	      <p class = "future_nongli"></p>
+	      <p class = "future_weather"></p>
+	    </div>
+	    <div class = "future3">
+	      <p class = "future_day"><span class = "future future_date"></span> <span class = "future future_week"></span></p>
+	      <p class = "future_nongli"></p>
+	      <p class = "future_weather"></p>
+	    </div>
+	    <div class = "future4">
+	      <p class = "future_day"><span class = "future future_date"></span> <span class = "future future_week"></span></p>
+	      <p class = "future_nongli"></p>
+	      <p class = "future_weather"></p>
+	    </div>
+	  </div>
+	</div>     
+
+	<div class = "footer">By Walkcodeman</div>
+</body>
+</html>
