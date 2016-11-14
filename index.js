@@ -113,6 +113,10 @@ $("#btn_city").click(function(){
                         $(".wrapper").fadeIn(1200);
                        });
 
+$("#city").keydown(function(event) { 
+                        if(event.which == 13) { $("#btn_city").click(); }
+});
+
 $(document).ready(function (){  $.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",
                                  function(){  $(".tip").text("您所在的地区为：" + remote_ip_info.country + remote_ip_info.province + remote_ip_info.city);
                                  cityWeather(remote_ip_info.city);  });
